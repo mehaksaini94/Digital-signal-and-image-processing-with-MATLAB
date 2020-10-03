@@ -1,0 +1,11 @@
+%to design of FIR low pass filter using Kaiser window
+
+% normalized passband frequency 0.25π rad/s
+% stopband frequency 0.35π rad/s
+%passband ripple 0.5 dB
+% stopband attenuation 65 dB.
+
+lpFilt = designfilt('lowpassfir','PassbandFrequency',0.25, ...
+         'StopbandFrequency',0.35,'PassbandRipple',0.5, ...
+         'StopbandAttenuation',65,'DesignMethod','kaiserwin');
+fvtool(lpFilt)
