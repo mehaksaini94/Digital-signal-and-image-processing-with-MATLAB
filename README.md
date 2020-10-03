@@ -1,2 +1,1 @@
-# linear_convolution_matlab
-This is a simple code for performing linear convolution of two sequences in MATLAB
+This repository contais basic codes for performing various operations on signals and images.
