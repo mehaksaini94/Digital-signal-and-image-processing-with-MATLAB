@@ -1,0 +1,10 @@
+%WAP to design of IIR low pass filter using Kaiser window
+
+% filter order 8
+%passband frequency 35 kHz
+%passband ripple 0.2 dB. 
+%sample rate is 200 kHz
+lpFilt = designfilt('lowpassiir','FilterOrder',8, ...
+         'PassbandFrequency',35e3,'PassbandRipple',0.2, ...
+         'SampleRate',200e3);
+fvtool(lpFilt)
